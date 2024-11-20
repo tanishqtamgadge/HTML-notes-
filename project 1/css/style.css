@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ff4d4d;
+    color: white;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffe6e6;
+}
+
+/* Main Section Styling */
+main {
+    height: calc(100vh - 100px);
+    background: url('/images/background.jpg/background.jpg.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+main .main-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+main .main-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+main .search-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+main .search-box input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+main .search-box button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main .search-box button:hover {
+    background-color: #ff4d4d;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    main .search-box input {
+        width: 90%;
+    }
+}
